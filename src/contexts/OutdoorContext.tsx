@@ -13,7 +13,7 @@ interface OutdoorProviderProps {
 
 export function OutdoorProvider({ children }: OutdoorProviderProps) {
 
-  const [outdoor, setOutdoor] = useState<any>(true);
+  const [outdoor, setOutdoor] = useState<any>([]);
 
   const defineOutdoor = (outdoor) => {
     setOutdoor(outdoor);

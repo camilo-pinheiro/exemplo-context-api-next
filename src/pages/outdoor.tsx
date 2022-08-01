@@ -3,7 +3,9 @@ import { useOutdoor } from "../contexts/OutdoorContext";
 const Outdoor = () => {
   const { outdoor } = useOutdoor();
   return (
-    <pre>{JSON.stringify(outdoor) }</pre>)
+    <>
+    {outdoor?.map((outdoor) => <h1>{outdoor.email}</h1>)}
+ </>)
   }
 
 export default Outdoor;

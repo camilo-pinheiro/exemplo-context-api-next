@@ -7,7 +7,7 @@ export default function Home(meuOutdoorRenderizadoPeloGetStaticProps) {
 
   //se eu quiser mudar o estado, posso utilizar a função aqui
   const passarValorOutdoor = () => {
-    defineOutdoor(meuOutdoorRenderizadoPeloGetStaticProps);
+    defineOutdoor(meuOutdoorRenderizadoPeloGetStaticProps.outdoor);
   }
 
   return (
